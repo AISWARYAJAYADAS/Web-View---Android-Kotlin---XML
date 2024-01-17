@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+   <data>
+
+   </data>
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       tools:context=".MainActivity">
+      
+      <!-- custom toolbar -->
+      <com.qburst.webview.CustomToolBar
+          android:id="@+id/customToolbar"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintEnd_toEndOf="parent" />
+
+
+      <Button
+          android:id="@+id/btnWebView"
+          android:text="@string/web_view"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+
+          android:gravity="center"
+
+          app:layout_constraintTop_toBottomOf="@id/customToolbar"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          android:layout_margin="120dp"
+
+          />
+
+      <ProgressBar
+          android:id="@+id/progressBar"
+          android:visibility="gone"
+          style="?android:attr/progressBarStyleLarge"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:max="3"
+          android:progress="100"
+          app:layout_constraintTop_toTopOf="@+id/webView"
+          app:layout_constraintStart_toStartOf="@id/webView"
+          app:layout_constraintEnd_toEndOf="@id/webView"
+          app:layout_constraintBottom_toBottomOf="@id/webView"
+          />
+
+
+      <WebView
+          android:id="@+id/webView"
+          android:visibility="visible"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:layout_constraintTop_toBottomOf="@id/customToolbar"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintEnd_toEndOf="parent" />
+
+      <Button
+          android:id="@+id/btnSavePdf"
+          android:visibility="gone"
+          android:textColor="#ffffff"
+          android:backgroundTint="@color/black"
+          android:text="@string/convert_webpage_to_pdf"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="25dp"
+          app:layout_constraintBottom_toBottomOf="parent"
+
+          />
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

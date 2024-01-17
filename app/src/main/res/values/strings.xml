@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">WebView</string>
+    <string name="web_view">Web View</string>
+    <string name="convert_webpage_to_pdf">Convert WebPage To PDF</string>
+    <string name="webView">Web View</string>
+</resources>
