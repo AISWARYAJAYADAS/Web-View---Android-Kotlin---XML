@@ -8,6 +8,8 @@ import android.os.Bundle
 import android.print.PrintAttributes
 import android.print.PrintJob
 import android.print.PrintManager
+import android.text.Editable
+import android.text.TextWatcher
 import android.view.View
 import android.webkit.WebResourceRequest
 import android.webkit.WebView
@@ -70,9 +72,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-
     }
-
 
 
     private fun printWebPage(webViewVariable: WebView) {

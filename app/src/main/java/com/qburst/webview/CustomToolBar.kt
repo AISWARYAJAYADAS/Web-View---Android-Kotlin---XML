@@ -1,6 +1,7 @@
 package com.qburst.webview
 
 import android.content.Context
+import android.text.TextWatcher
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import androidx.constraintlayout.widget.ConstraintLayout
@@ -23,4 +24,5 @@ class CustomToolBar(context: Context, attrs:AttributeSet):ConstraintLayout(conte
         val backButton = binding.backArrow
         backButton.setOnClickListener(listener)
     }
+
 }

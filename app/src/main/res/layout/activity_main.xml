@@ -45,10 +45,11 @@
           android:layout_height="wrap_content"
           android:max="3"
           android:progress="100"
-          app:layout_constraintTop_toTopOf="@+id/webView"
-          app:layout_constraintStart_toStartOf="@id/webView"
-          app:layout_constraintEnd_toEndOf="@id/webView"
-          app:layout_constraintBottom_toBottomOf="@id/webView"
+          android:layout_margin="25dp"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintBottom_toBottomOf="parent"
           />
 
 
@@ -65,7 +66,7 @@
           android:id="@+id/btnSavePdf"
           android:visibility="gone"
           android:textColor="#ffffff"
-          android:backgroundTint="@color/black"
+          android:backgroundTint="?attr/colorPrimary"
           android:text="@string/convert_webpage_to_pdf"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
